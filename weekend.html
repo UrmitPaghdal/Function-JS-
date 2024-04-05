@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeekEnd</title>
+</head>
+<body>
+    <script>
+        let choice = parseInt(prompt("-: week And WeekEnd Days :- \npress 1 for monday. \npress 2 for tuesday. \npress 3 for wednesday. \npress 4 for thursday. \npress 5 for friday. \npress 6 for saturday. \npress 7 for sunday. \n\nEnter your choice :"));
+    
+        switch (choice) {
+            case 1:
+                choice = "Monday";
+                document.write("This is Week Daend");
+                break;
+            case 2:
+                choice = "Tuesday";
+                document.write("This is Week Day");
+                break;
+            case 3:
+                choice = "Wednesday";
+                document.write("This is Week Day");
+                break;
+            case 4:
+                choice = "Thursday";
+                document.write("This is Week Day");
+                break;
+            case 5:
+                choice = "Friday";
+                document.write("This is Week Day");
+                break;
+            case 6:
+                choice = "Saturday";
+                document.write("This is Weekend");
+                break;
+            case 7:
+                choice = "Sunday";
+                document.write("This is Weekend");
+                break;
+        }
+    
+        document.getElementById("day").innerHTML = choice;
+    </script>
+</body>
+</html>

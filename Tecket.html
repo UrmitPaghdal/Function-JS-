@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecket</title>
+</head>
+
+<body>
+
+    <script>
+        let choice = parseInt(prompt("Press 1 for English language. \nहिंदी भाषा के लिए 2 दबाएं. \nગુજરાતી ભાષા માટે 3 દબાવો."));
+
+        switch (choice) {
+            case 1:
+                let eng = parseInt(prompt("Press 1 for Movie Tickets. \nPress 2 for Concert Tickets. \nPress 3 for Sports Tickets. \n\n Enter your choice :"));
+                switch (eng) {
+                    case 1:
+                        document.write("You have successfully booked Movie Tickets.");
+                        break;
+                    case 2:
+                        document.write("You have successfully booked Concert Tickets.");
+                        break;
+                    case 3:
+                        document.write("You have successfully booked Sports Tickets.");
+                        break;
+                    default:
+                        document.write("Enter valid choice.");
+                        break;
+                }
+                break;
+            case 2:
+                let hindi = parseInt(prompt("मूवी टिकट के लिए 1 दबाइए। \nकॉन्सर्ट टिकट के लिए 2 दबाइए। \nखेल टिकटों के लिए 3 दबाएँ। \n\n अपनी पसंद दर्ज करें :"));
+                switch (hindi) {
+                    case 1:
+                        document.write("आपने सफ़लतापूर्व मूवी टिकट बुक किये हैं।");
+                        break;
+                    case 2:
+                        document.write("आपने सफलतपूर्व कॉन्सर्ट टिकट बुक किये हैं।");
+                        break;
+                    case 3:
+                        document.write("आपने सफ़लतापूर्व स्पोर्ट्स टिकट बुक किये हैं।");
+                        break;
+                    default:
+                        document.write("वैध विकल्प दर्ज करें.");
+                        break;
+                }
+                break;
+            case 3:
+                let guj = parseInt(prompt("મૂવી ટિકિટ માટે 1 દબાવો. \nકોન્સર્ટ ટિકિટ માટે 2 દબાવો. \nસ્પોર્ટ્સ ટિકિટ માટે 3 દબાવો. \n\n તમારી પસંદગી દાખલ કરો:"));
+                switch (guj) {
+                    case 1:
+                        document.write("તમે સફળતાપૂર્વક મૂવી ટિકિટ બુક કરાવી છે.");
+                        break;
+                    case 2:
+                        document.write("તમે સફળતાપૂર્વક કોન્સર્ટ ટિકિટ બુક કરાવી છે.");
+                        break;
+                    case 3:
+                        document.write("તમે સફળતાપૂર્વક સ્પોર્ટ્સ ટિકિટ બુક કરાવી છે.");
+                        break;
+                    default:
+                        document.write("માન્ય પસંદગી દાખલ કરો.");
+                        break;
+                }
+                break;
+            default:
+                document.write("Enter valid choice.");
+                break;
+        }
+    </script>
+
+</body>
+
+</html>

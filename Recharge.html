@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge</title>
+</head>
+
+<body>
+
+    <script>
+        let choice = parseInt(prompt("press 1 for English language. \n हिंदी भाषा के लिए 2 दबाएँ. \n press 3 for Gujarati language. \n\n Enter your choice :"));
+
+        switch (choice) {
+            case 1:
+                let eng = parseInt(prompt("press 1 for Internet Recharge. \n press 2 for Top-up Recharge. \n press 3 for Special Recharge. \n\n Enter your choice :"));
+                switch (eng) {
+                    case 1:
+                        document.write("You have successfully done Internet Recharge.");
+                        break;
+                    case 2:
+                        document.write("You have successfully done Top-up Recharge.");
+                        break;
+                    case 3:
+                        document.write("You have successfully done Special Recharge.");
+                        break;
+                    default:
+                        document.write("enter valid choice.");
+                        break;
+                }
+                break;
+            case 2:
+                let hindi = parseInt(prompt("इंटरनेट रिचार्ज के लिए 1 दबाइये। \n टॉप-अप रिचार्ज के लिए 2 दबाइए। \nस्पेशल रिचार्ज के लिए 3 दबाइए। \n\n अपनी पसंद दर्ज करें :"));
+                switch (hindi) {
+                    case 1:
+                        document.write("अपनी सफलता पूर्व इंटरनेट रिचार्ज कर लिया है।");
+                        break;
+                    case 2:
+                        document.write("आपने सफ़लतापूर्व टॉप-अप रिचार्ज कर लिया है।");
+                        break;
+                    case 3:
+                        document.write("आपने सफ़लतापूर्व स्पेशल रिचार्ज कर लिया है।");
+                        break;
+                    default:
+                        document.write("वैध विकल्प दर्ज करें.");
+                        break;
+                }
+                break;
+            case 3:
+                let guj = parseInt(prompt("ઇન્ટરનેટ રિચાર્જ માટે 1 દબાવો. \n ટોપ-અપ રિચાર્જ માટે 2 દબાવો. \n ખાસ રિચાર્જ માટે 3 દબાવો. \n\n તમારી પસંદગી દાખલ કરો :"));
+                switch (guj) {
+                    case 1:
+                        document.write("તમે સફળતાપૂર્વક ઈન્ટરનેટ રિચાર્જ કર્યું છે.");
+                        break;
+                    case 2:
+                        document.write("તમે સફળતાપૂર્વક ટોપ-અપ રિચાર્જ કર્યું છે.");
+                        break;
+                    case 3:
+                        document.write("તમે સફળતાપૂર્વક સ્પેશિયલ રિચાર્જ કર્યું છે.");
+                        break;
+                    default:
+                        document.write("માન્ય પસંદગી દાખલ કરો.");
+                        break;
+                }
+                break;
+            default:
+                document.write("enter valid choice.");
+                break;
+        }
+    </script>
+
+</body>
+
+</html>

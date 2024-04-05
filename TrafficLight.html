@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrafficLight</title>
+</head>
+
+<body>
+
+    <p id="light"></p>
+
+    <script>
+        let choice = parseInt(prompt("Press 1 for Red Light. \n Press 2 for Yellow Light. \n Press 3 for Green Light. \n\n Enter The Choice Here :"));
+
+        switch (choice) {
+            case 1:
+                choice = "It's Red light. please stop the cars.";
+                break;
+
+            case 2:
+                choice = "It's Yellow light. get ready.";
+                break;
+
+            case 3:
+                choice = "It's Green light. you can go.";
+                break;
+
+            default:
+                choice = "Please enter valid Choice";
+                break;
+        }
+
+        document.getElementById("light").innerHTML = choice;
+    </script>
+</body>
+
+</html>

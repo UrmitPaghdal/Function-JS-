@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+</head>
+
+<body>
+
+    <script>
+        let choice = parseInt(prompt("Press 1 for Pizza. \n Press 2 for Burger. \n Press 3 for Dosa. \n\n Enter your choice for order :"));
+
+        switch (choice) {
+            case 1:
+                let pizzaChoice = parseInt(prompt("Press 1 for Four Cheese Pizza. \n Press 2 for farm house Pizza. \n Press 3 for mexican Pizza. \n\n Enter your choice for Pizza :"));
+                switch (pizzaChoice) {
+                    case 1:
+                        document.write("You ordered Four Cheese Pizza.");
+                        break;
+                    case 2:
+                        document.write("You ordered Cheesy Vegetable Pizza.");
+                        break;
+                    case 3:
+                        document.write("You ordered Pizza Margherita.");
+                        break;
+                    default:
+                        document.write("Please enter a valid choice.");
+                        break;
+                }
+                break;
+            case 2:
+                let burgerChoice = parseInt(prompt("Press 1 for beef burger. \n Press 2 for cheese burger. \n Press 3 for hawaiian burger. \n\n Enter your choice for burger :"));
+                switch (burgerChoice) {
+                    case 1:
+                        document.write("You ordered Grill Burger");
+                        break;
+                    case 2:
+                        document.write("You ordered cheese Burger");
+                        break;
+                    case 3:
+                        document.write("You ordered Tiki Burger");
+                        break;
+                    default:
+                        document.write("Please enter a valid choice.");
+                        break;
+                }
+                break;
+            case 3:
+                let dosaChoice = parseInt(prompt("Press 1 for Cheese dosa. \n Press 2 for Masala dosa. \n Press 3 for Mysore masala dosa. \n\n Enter your choice for dosa :"));
+                switch (dosaChoice) {
+                    case 1:
+                        document.write("You ordered Cheese dosa");
+                        break;
+                    case 2:
+                        document.write("You ordered Masala dosa");
+                        break;
+                    case 3:
+                        document.write("You ordered Mysore masala dosa");
+                        break;
+                    default:
+                        document.write("Please enter a valid choice.");
+                        break;
+                }
+                break;
+            default:
+                document.write("Please enter a valid choice.");
+                break;
+        }
+    </script>
+
+</body>
+
+</html>
